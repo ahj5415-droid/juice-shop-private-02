@@ -49,7 +49,7 @@ export const cutOffPoisonNullByte = (str: string) => {
   return str
 }
 
-// export const isAuthorized = () => expressJwt(({ secret: publicKey }) as any)
+/// export const isAuthorized = () => expressJwt(({ secret: publicKey }) as any)
 // Updated isAuthorized implementation
 export const isAuthorized = () => {
   return (req: Request, res: Response, next: NextFunction) => {
